@@ -1,3 +1,4 @@
+// Prefix Sum approach to count subarrays with sum equal to k
 public class SubarraySumEqualsK_PrefixSum {
     public static int subarraySum(int[] nums, int k) {
         int prifixArray[] = new int[nums.length];
