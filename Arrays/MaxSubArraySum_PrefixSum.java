@@ -2,6 +2,7 @@ public class MaxSubArraySum_PrefixSum {
     public static int MaxE(int nums[]){
         int prefixArray[] = new int[nums.length];
         int max = Integer.MIN_VALUE;
+        prefixArray[0] = nums[0];
         for(int i=1;i<nums.length;i++){
             prefixArray[i] = prefixArray[i-1]+nums[i];
         }
