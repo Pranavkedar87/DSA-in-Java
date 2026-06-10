@@ -1,3 +1,6 @@
+// Linear Search Approach
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 public class FindFirstAndLastPosition {
     public static int[] searchRange(int[] nums, int target) {
         int start = -1;
