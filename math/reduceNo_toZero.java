@@ -1,6 +1,6 @@
 package math;
 
-public class demo {
+public class reduceNo_toZero {
     public static int steps(int num){
         int result = 0;
         while(num > 0){
