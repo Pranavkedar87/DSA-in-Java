@@ -1,0 +1,11 @@
+package bit_manipulation;
+
+public class clear_ithBit {
+    public static int clearBit(int n,int i){
+        int bitmask = ~(1<<i);
+        return n & bitmask;
+    }
+    public static void main(String args[]){
+        System.out.println(clearBit(10,2));
+    }
+}
