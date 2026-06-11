@@ -1,4 +1,4 @@
-package Stack;
+package math;
 
 public class demo {
     public static int steps(int num){
