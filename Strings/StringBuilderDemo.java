@@ -6,6 +6,6 @@ public class StringBuilderDemo {
         for(char ch='a';ch<='z';ch++){
             sb.append(ch);
         }
-        System.out.println(sb);
+        System.out.println(sb.charAt(1));
     }
 }
