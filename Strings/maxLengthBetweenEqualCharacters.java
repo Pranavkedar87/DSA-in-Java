@@ -43,25 +43,9 @@ public class maxLengthBetweenEqualCharacters {
         return result-1;
     
         }
-        public static void shortestPalindrome(String s) {
-        String result ="";
-        int n = s.length();
-        int a[] = new int[n-1];
-        for(int i=0;i<n/2;i++){
-            if(s.charAt(i) != s.charAt((n-1)-i)){
-                result += 1;
-            }else{
-                a[i] = 0;
-            }
-        }
-        for(int i=0;i<n;i++){
-            System.out.println(a[i]);
-        }
-    }
 
     public static void main(String args[]){
         String s = "aacecaaa";
-        //System.out.println(check2(s));
-        shortestPalindrome(s);
+        System.out.println(check2(s));
     }
 }
