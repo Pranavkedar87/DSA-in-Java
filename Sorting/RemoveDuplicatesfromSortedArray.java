@@ -1,4 +1,4 @@
-public class remove {
+public class RemoveDuplicatesfromSortedArray {
     public static int removeDuplicates(int[] nums) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
