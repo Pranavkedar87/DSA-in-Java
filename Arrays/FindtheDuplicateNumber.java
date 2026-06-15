@@ -1,4 +1,4 @@
-package Two_DArrays;
+
 
 public class FindtheDuplicateNumber {
     public static int findDuplicate(int[] nums) {
