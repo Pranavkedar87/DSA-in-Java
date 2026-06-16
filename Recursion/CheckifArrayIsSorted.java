@@ -1,3 +1,4 @@
+package Recursion;
 public class CheckifArrayIsSorted {
     public static boolean check(int[] nums,int i) {
         if(i == nums.length-1){
