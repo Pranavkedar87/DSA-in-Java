@@ -1,6 +1,6 @@
 package Strings;
 import java.util.*;
-public class em {
+public class RemoveDupicateLetter {
     public static  String removeDuplicateLetters(String s) {
         StringBuilder sb = new StringBuilder("");
         int count[] = new int[26];
