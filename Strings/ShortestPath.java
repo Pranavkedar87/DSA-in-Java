@@ -1,5 +1,5 @@
 package Strings;
-import java.util.*;
+//import java.util.*;
 public class ShortestPath {
     public static float distance(String s){
         int x=0 , y=0;
