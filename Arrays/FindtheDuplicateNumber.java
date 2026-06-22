@@ -2,21 +2,27 @@
 
 public class FindtheDuplicateNumber {
     public static int findDuplicate(int[] nums) {
-        int max = Integer.MIN_VALUE;
+        /*int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         for(int i=0;i<nums.length;i++){
             max = Math.max(nums[i],max);
             min = Math.min(nums[i],min);
         }
-        int count[] = new int[max - min + 1];
+            */
+        int count[] = new int[nums.length + 1];
         for(int num : nums){
-            count[num - min]++;
+            if(count[num] == 1){
+                return num;
+            }
+            count[num]++;
         }
+        /* 
         for(int i=0;i<count.length;i++){
             if(count[i] > 1){
                 return i+min;
             }
         }
+            */
         return -1;
     }
     public static void main(String args[]){
