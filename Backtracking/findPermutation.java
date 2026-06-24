@@ -1,5 +1,5 @@
 package Backtracking;
-
+//Time complexcity O(n * n!)
 public class findPermutation {
     public static void FindPermutation(String str,String ans){
         if(str.length() == 0){
