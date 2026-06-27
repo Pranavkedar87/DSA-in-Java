@@ -1,4 +1,4 @@
-package Recursion;
+package Backtracking;
 
 public class SudokuSolver {
     public static boolean isSafe(int[][] s,int row,int col,int digit){
@@ -73,6 +73,8 @@ public class SudokuSolver {
         if(solveSudoku(s, 0, 0)){
             System.out.println("Solution found");
             printBoard(s);
+        }else{
+            System.out.println("solution not found");
         }
 
     }
