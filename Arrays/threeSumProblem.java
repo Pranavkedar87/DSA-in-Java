@@ -1,6 +1,6 @@
 import java.util.*;
 public class threeSumProblem {
-    public static void cal(int[] nums){
+    public static void findTriplets(int[] nums){
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         for(int i=0;i<nums.length;i++){
@@ -29,6 +29,6 @@ public class threeSumProblem {
     }
     public static void main(String[] args) {
         int nums[] = {-1,0,1,2,-1,-4};
-        cal(nums);
+       findTriplets(nums);
     }
 }
