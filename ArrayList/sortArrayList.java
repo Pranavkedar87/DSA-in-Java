@@ -5,7 +5,7 @@ import java.util.*;
 
 public class sortArrayList {
     public static void main(String args[]){
-        int max = Integer.MIN_VALUE;
+       // int max = Integer.MIN_VALUE;
         List<Integer> ans = new ArrayList<>();
         ans.add(1);
         ans.add(4);
@@ -15,5 +15,7 @@ public class sortArrayList {
         System.out.println(ans);
         Collections.sort(ans);
         System.out.println(ans);
+         Collections.sort(ans,Collections.reverseOrder());
+          System.out.println(ans);
     }
 }
