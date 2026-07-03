@@ -13,8 +13,11 @@ public class sortArrayList {
         ans.add(2);
         ans.add(3);
         System.out.println(ans);
+        //ascending
         Collections.sort(ans);
         System.out.println(ans);
+
+        //descending
          Collections.sort(ans,Collections.reverseOrder());
           System.out.println(ans);
     }
