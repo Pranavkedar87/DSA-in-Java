@@ -23,6 +23,7 @@ public class ContainerWithMostWaterBruteForce {
         nums.add(8);
         nums.add(3);
         nums.add(7); 
+        System.out.println('c'-'a');
         System.out.println(mostWater(nums));
     }
 }
