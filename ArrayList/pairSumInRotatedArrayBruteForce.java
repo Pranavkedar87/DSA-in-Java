@@ -34,5 +34,7 @@ public class pairSumInRotatedArrayBruteForce {
         nums.add(10); 
         int target = 169;
         System.out.println(findpair(nums,target));
+        String s = "HelloWorld"; //part = "abc"
+        System.out.println(s.indexOf("World"));
     }
 }
