@@ -1,6 +1,6 @@
 package LinkedList;
 
-import Strings.chackPalindrome;
+//import Strings.chackPalindrome;
 
 public class PalindromeLinkedListByUsingString {
     public static class node {
