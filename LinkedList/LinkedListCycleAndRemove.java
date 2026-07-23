@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class LinkedListCycle {
+public class LinkedListCycleAndRemove {
     public static class node {
     int data;
     node next;
@@ -20,7 +20,7 @@ public class LinkedListCycle {
         }
         newNode.next = head;
         head = newNode;
-       // tail.next = head;
+        tail.next = head;
     }
     /* 
     public void printLL(){
@@ -30,20 +30,25 @@ public class LinkedListCycle {
         }
     }
         */
-    public boolean isPresent(){
+    public node isPresent(){
         node slow = head;
         node fast = head;
         while(fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
-            if(slow == fast){
-                return true;
+            if(slow == fast){ 
+                slow = head;
+                while(slow != fast){
+                    slow = slow.next;
+                    fast = fast.next;
+                }
+                return fast;
             }
         }
-        return false;
+        return null;
     }
     public static void main(String args[]){
-        LinkedListCycle l1 = new LinkedListCycle();
+        LinkedListCycleAndRemove l1 = new LinkedListCycleAndRemove();
         l1.createNode(4);
         l1.createNode(6);
         l1.createNode(9);
@@ -52,6 +57,7 @@ public class LinkedListCycle {
         l1.createNode(93);
        // System.out.println(head.data);
        // l1.printLL();
-       System.out.println(l1.isPresent());
+       node ans = l1.isPresent();
+       System.out.println(ans.data);
     }
 }
