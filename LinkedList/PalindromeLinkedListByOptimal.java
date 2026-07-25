@@ -1,7 +1,7 @@
 package LinkedList;
 
 public class PalindromeLinkedListByOptimal {
-     public static class node {
+    public static class node {
     int data;
     node next;
     public node(int data){
