@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class doubleLL {
+public class addElemntAtFristDoubleLL {
     public static class node {
         int data ;
         node next;
@@ -30,7 +30,7 @@ public class doubleLL {
         }
     }
     public static void main(String args[]){
-        doubleLL l1 = new doubleLL();
+        addElemntAtFristDoubleLL l1 = new addElemntAtFristDoubleLL();
         l1.addElemnt(1);
         l1.addElemnt(4);
         l1.addElemnt(7);
