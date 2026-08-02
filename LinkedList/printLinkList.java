@@ -5,11 +5,11 @@ public class printLinkList {
     public static class node {
     int data;
     node next;
-    public node(int data){
-        this.data = data;
-        this.next = null;
+        public node(int data){
+           this.data = data;
+           this.next = null;
+        }
     }
-}
     public static node head;
     public static node tail;
 
@@ -23,10 +23,11 @@ public class printLinkList {
         head = newNode;
     }
     public void printLL(){
-        while(head != null){
-            System.out.println(head.data);
-            head = head.next;
-        }
+        node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+"->");
+            temp = temp.next;
+        }System.out.println("NULL");
     }
     public static void main(String args[]){
         printLinkList l1 = new printLinkList();
