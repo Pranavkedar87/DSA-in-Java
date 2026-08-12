@@ -1,45 +1,50 @@
 package Queue;
 
-//import Stack.stackUsingLinkedList.stack;
-
-public class implementQueueUsingArray {
+public class implementCircularQueue {
     public static class Queue{
         static int arr[];
         static int size;
         static int rear;
+        static int front;
         Queue(int n){
             arr = new int[n];
             size = n;
             rear = -1;
-
-            
+            front = -1;
         }
         static boolean isEmpty(){
-            if (rear == -1){
+            if (rear == -1 && front == -1){
                 return true;
             }
             return false;
         }
         static void add(int data){
-            if(rear == size-1){
+            if((rear + 1)%size == front){
                 return; 
             }
-            rear++;
+            if(front == -1){
+                front = (front + 1)%size;
+            }
+            rear = (rear + 1)%size;
             arr[rear] = data;
         }
         static int remove(){
             if(isEmpty()){
                 return -1;
             }
-            int front = arr[0];
-            for(int i=0;i<rear;i++){
-                arr[i] = arr[i+1];
+            int result = arr[front];
+            if(front == rear){
+                front = rear = -1;
+            }else{
+                front = (front + 1)%size;
             }
-            rear--;
-            return front;
+            return result;
         }
         static int peek(){
-            return arr[0];
+            if(isEmpty()){
+                return -1;
+            }
+            return arr[front];
         }
     }
     public static void main(String args[]){
