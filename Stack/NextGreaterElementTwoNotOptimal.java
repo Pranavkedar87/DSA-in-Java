@@ -1,4 +1,4 @@
-package Queue;
+package Stack;
 
 public class NextGreaterElementTwoNotOptimal {
     public static int[] nextGreaterElements(int[] nums){
